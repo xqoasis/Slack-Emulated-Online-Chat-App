@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+[ dropdown menu ]*/
+@media screen and (max-width: 900px) {
+  .dropdown{
+    display: none !important;
+  }
+}
+  
+.dropdown {
+  z-index: 3;
+  margin-top: 10px;
+  margin-right: 26px;
+  color: #111;
+  padding-right: 3px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+  
+.dropbtn {
+  z-index: 999;
+  font-size: 20px;
+  color: #111;
+  padding-left: 3px;
+  display: inline;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #7d5082;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbdbdb;
+  min-width: 160px;
+  overflow: auto;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 2;
+}
+  
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+  
+.dropdown a:hover {
+  color: #dbdbdb;
+  background-color: #441949;
+}
+
+.show {display: block;}
+  

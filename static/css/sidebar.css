@@ -1,0 +1,122 @@
+/*------------------------------------------------------------------
+[ channel-list ]*/
+
+.sidebar {
+    height: 88%;
+    width: 20%;
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3a123e;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+  }
+  
+.sidebar-welcome {
+  height: 12%;
+  width: 20%;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: white;
+  background-color: #3a123e;
+  border-bottom: 1px solid rgb(186, 186, 186); 
+}
+
+.sidebar-welcome p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  
+}
+
+.sidebar-title  {
+  color: #c8c0cb;
+  padding: 0 20px;
+}
+
+.sidebar-channel-container{
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-channel-container channel{
+  display: flex;
+  border-radius: 10px;
+}
+
+.sidebar-channel-container channel:hover {
+  background-color: #482c4f;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.sidebar-channel:hover{
+  color: #fff;
+}
+
+
+.sidebar-channel {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dbdbdb;
+  display: inline;
+  
+}
+
+.sidebar-channel-unread-count {
+  text-decoration: none;
+  font-size: 18px;
+  color: #dbdbdb;
+}
+
+
+#sidebar-create-btn {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: #dcd9d9;
+  background-color: transparent; 
+}
+#sidebar-create-btn:hover{
+  cursor: pointer;
+}
+
+#sidebar-create-channel {
+  height: 30%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left:0;
+  background-color: transparent;
+}
+  
+.sidebar-create-channel-container {
+  margin: 10px;
+  background-color: #f8f8f8;
+  border: 3px solid #f1f1f1;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    margin-left:15%;
+    width: 80%;
+  }
+  .sidebar-welcome{
+    margin-left:15%;
+    width: 80%;
+  }
+}
+  
